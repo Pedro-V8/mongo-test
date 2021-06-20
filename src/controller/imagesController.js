@@ -17,6 +17,8 @@ module.exports = {
         const random = (num) => Math.floor(Math.random() * num);
         let arrayCliente = []
         try {
+
+
             const results = await Image.find()
             while(arrayCliente.length < 10){
                 let imagem = random(results.length)
