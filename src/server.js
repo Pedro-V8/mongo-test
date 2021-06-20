@@ -11,7 +11,7 @@ app.use(routes)
 app.get('/' , (req , res) => {res.send('Ok')})
 
 
-app.listen('3333' , (req , res) => {
+app.listen(process.env.PORT || 3333, (req , res) => {
     console.log('App listen on port 3333')
 })
 
