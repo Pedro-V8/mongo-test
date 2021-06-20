@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
 
-mongoose.connect('mongodb://localhost/testdb' , { useMongoClient: true})
+mongoose.connect(process.env.MONGO_URL, { useMongoClient: true})
 
 mongoose.Promise = global.Promise
 
