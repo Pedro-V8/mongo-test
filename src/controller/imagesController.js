@@ -20,13 +20,13 @@ module.exports = {
 
 
             const results = await Image.find()
-           // while(arrayCliente.length < 10){
-               // let imagem = random(results.length)
-               // if(arrayCliente.indexOf(results[imagem]) === -1)
-              //  {
-                //    arrayCliente.push(results[imagem])
-               // }
-            //}
+            while(arrayCliente.length < 10){
+               let imagem = random(results.length)
+                if(arrayCliente.indexOf(results[imagem]) === -1)
+                {
+                    arrayCliente.push(results[imagem])
+                }
+            }
 
             
             return res.send(results)
